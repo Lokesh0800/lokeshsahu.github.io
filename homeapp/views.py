@@ -13,7 +13,7 @@ from django.utils.encoding import smart_str
 
 
 def index(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 
 def entry_form(request):
@@ -87,4 +87,4 @@ def csv_convertion(request):
 	return response
 
 def login(request):
-    return render(request, 'login.html')
+    return render(request, 'index.html')
