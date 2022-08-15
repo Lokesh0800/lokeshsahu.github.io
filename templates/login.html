@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="/static/home.css">
+        <title>
+            Login
+        </title>
+    </head>
+    <body>
+        <div class="logincontainer">
+        <form action="home" method="post">
+            {% csrf_token %}
+            <label for="username">Login ID</label>
+            <input type="text" name="username"><br><br>
+            <label for="pass">Password</label>
+            <input type="password" name="pass"><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    </body>
+</html>
